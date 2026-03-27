@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Didine DZ</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>Didine DZ</h1>
+
+<h2>الخدمات المتاحة</h2>
+<ul id="services-list">
+    <li>سيرة ذاتية</li>
+    <li>رسالة تذكير</li>
+    <li>K-bis</li>
+    <li>موعد مع الهاتف</li>
+    <li>موعد بالمكتب</li>
+</ul>
+
+<h2>تسجيل طلب جديد</h2>
+<form id="order-form">
+    الاسم: <input type="text" id="name"><br><br>
+    الهاتف: <input type="text" id="phone"><br><br>
+    المدينة: <input type="text" id="city"><br><br>
+    الخدمة:
+    <select id="service">
+        <option>سيرة ذاتية</option>
+        <option>رسالة تذكير</option>
+        <option>K-bis</option>
+        <option>موعد مع الهاتف</option>
+        <option>موعد بالمكتب</option>
+    </select><br><br>
+    <button type="submit">تسجيل الطلب</button>
+</form>
+
+<h2>الطلبات المسجلة</h2>
+<ul id="orders-list"></ul>
+
+<h2>إضافة خدمة جديدة</h2>
+<input type="text" id="new-service" placeholder="اسم الخدمة الجديدة">
+<button id="add-service">إضافة خدمة</button>
+
+<script src="script.js"></script>
+</body>
+</html>
